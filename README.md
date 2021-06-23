@@ -1,24 +1,20 @@
-# README
+# rails-secret-command
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![マイ-ムービー(7)](https://user-images.githubusercontent.com/51913879/123138008-8fa06f00-d48f-11eb-896b-91dee07c1434.gif)
 
-Things you may want to cover:
+Railsアプリに隠しコマンドを実装するためのサンプル。
 
-* Ruby version
+詳細はQiitaにて記載。
 
-* System dependencies
+https://qiita.com/kazama1209/items/78bd59304c12bd61b771
 
-* Configuration
+## セットアップ
 
-* Database creation
+```
+$ docker-compose build
+$ docker-compose up -d
+$ docker-compose run web rails webpacker:install
+$ docker-compose run web rails db:create
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[http://localhost:3000/](http://localhost:3000/) にアクセス。
